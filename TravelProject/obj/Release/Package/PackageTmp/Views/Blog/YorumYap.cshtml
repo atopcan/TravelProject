@@ -1,0 +1,15 @@
+﻿@using TravelProject.Models.Sınıflar
+@model List<Blog>
+
+<div class="content-form">
+    <h3>Bir Yorum Yapın</h3>
+    <form method="post">
+        <input type="hidden" placeholder="ID" name="blogid" value="@ViewBag.deger" required  />
+        <input type="text" placeholder="Kullanıcı Adı" name="kullaniciadi" required />
+        <input type="email" placeholder="Email" size="118" minlength="3" maxlength="64" name="email" required />
+        <input type="text" placeholder="Yorum" name="yorum" required />
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="Gönder" />
+    </form>
+</div>
+
